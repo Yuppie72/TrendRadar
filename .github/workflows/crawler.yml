@@ -56,6 +56,13 @@ jobs:
           GITHUB_ACTIONS: true
         run: python main.py
 
+     # ... (其他部分不变) ...
+
+  - name: Commit and push if changes
+    run: |
+      echo "Skipping commit and push step as requested." # 这行命令会成功执行，并且什么都不做
+
+# ... (文件底部其他部分) ...
      # - name: Commit and push if changes
      #   run: |
      #     git config --global user.name 'GitHub Actions'
